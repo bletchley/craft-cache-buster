@@ -1,0 +1,41 @@
+{
+    "name": "bletchley/cache-buster",
+    "description": "Purges cache from Fastly after an element is changed",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "cache buster"
+    ],
+    "support": {
+        "docs": "https://github.com/bletchley/craft-cache-buster/blob/master/README.md",
+        "issues": "https://github.com/bletchley/craft-cache-buster/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Skogrand",
+            "homepage": "http://bletchley.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "bletchley\\cachebuster\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Cache Buster",
+        "handle": "cache-buster",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/bletchley/craft-cache-buster/master/CHANGELOG.md",
+        "class": "bletchley\\cachebuster\\CacheBuster"
+    }
+}
