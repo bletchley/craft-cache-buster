@@ -79,7 +79,7 @@ class CacheBuster extends Plugin
         self::$plugin = $this;
 
         $this->serviceId = getenv('FASTLY_SERVICE_ID');
-        $this->apiToken = getenv('FASTLY_API_KEY') || getenv('FASTLY_API_TOKEN');
+        $this->apiToken = getenv('FASTLY_API_KEY');
 
         Event::on(
             Plugins::class,
